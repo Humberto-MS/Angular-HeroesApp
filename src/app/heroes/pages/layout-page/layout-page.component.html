@@ -27,8 +27,12 @@
 
     <span class="spacer"></span>
 
-    <button mat-button>
-      Log Out
+    <span> {{ user?.email }} </span>
+
+    <button
+      mat-button
+      (click)="onLogOut()">
+      Log out
     </button>
   </mat-toolbar>
 
